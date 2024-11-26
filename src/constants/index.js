@@ -32,7 +32,9 @@ import {
     threejs,
     tent,
     todo,
-    cube
+    cube,
+    vw,
+    tshirt
 } from "../assets/icons";
 
 export const skills = [
@@ -288,6 +290,20 @@ export const projects = [
         description: 'In Galaxy Shooter, you control a spaceship navigating through space. Your objective is to destroy enemy ships and avoid obstacles. Collect power-ups to boost your abilities and survive as long as possible to achieve a high score.',
         link: 'https://saurabhsm11.itch.io/galaxy-shooter',
     },
+    {
+        iconUrl: vw,
+        theme: 'btn-back-black',
+        name: 'Virtual Wardrobe',
+        description: 'Virtual Wardrobe: A 3D web application that allows users to explore, customize, and visualize outfits on realistic avatars in real-time, offering an immersive and interactive styling experience.',
+        link: 'https://github.com/bean-1129/Virtual-Wardrobe-Final',
+    },
+    {
+        iconUrl: tshirt,
+        theme: 'btn-back-yellow',
+        name: 'ShirtLab',
+        description: 'ShirtLab: An interactive 3D web application that allows users to customize shirts with AI-generated designs, upload custom images, and explore a range of colors and styles, offering a seamless blend of creativity and personalization.',
+        link: 'https://shirtlab-rnyn.onrender.com',
+    }
     // {
     //     iconUrl: estate,
     //     theme: 'btn-back-black',

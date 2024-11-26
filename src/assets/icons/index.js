@@ -35,6 +35,8 @@ import threejs from './threejs.svg'
 import tent from './tent.svg'
 import todo from './todo.svg'
 import cube from './cube.svg'
+import vw from './vw.png'
+import tshirt from './tshirt.png'
 export {
     css,
     express,
@@ -72,5 +74,7 @@ export {
     threejs,
     tent,
     todo,
-    cube
+    cube,
+    vw,
+    tshirt
 }

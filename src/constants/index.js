@@ -12,6 +12,8 @@ import {
   hashtag,
   cpp,
   mit,
+  crosscountryLogo,
+  NEULogo,
 } from "../assets/images";
 import {
   car,
@@ -51,6 +53,9 @@ import {
   tshirt,
   urdrobe,
   quirepad,
+  reactNative,
+  swift,
+  firebase,
 } from "../assets/icons";
 
 export const skills = [
@@ -58,36 +63,43 @@ export const skills = [
     imageUrl: css,
     name: "CSS",
     type: "Frontend",
+    efficiency: 10,
   },
   {
     imageUrl: express,
     name: "Express",
     type: "Backend",
+    efficiency: 9,
   },
   {
     imageUrl: git,
     name: "Git",
     type: "Version Control",
+    efficiency: 9,
   },
   {
     imageUrl: github,
     name: "GitHub",
     type: "Version Control",
+    efficiency: 10,
   },
   {
     imageUrl: html,
     name: "HTML",
     type: "Frontend",
+    efficiency: 10,
   },
   {
     imageUrl: javascript,
     name: "JavaScript",
     type: "Frontend",
+    efficiency: 9,
   },
   {
     imageUrl: mongodb,
     name: "MongoDB",
     type: "Database",
+    efficiency: 10,
   },
   // {
   //     imageUrl: motion,
@@ -98,21 +110,25 @@ export const skills = [
     imageUrl: mui,
     name: "Material-UI",
     type: "Frontend",
+    efficiency: 10,
   },
   {
     imageUrl: nextjs,
     name: "Next.js",
     type: "Frontend",
+    efficiency: 7,
   },
   {
     imageUrl: nodejs,
     name: "Node.js",
     type: "Backend",
+    efficiency: 10,
   },
   {
     imageUrl: react,
     name: "React",
     type: "Frontend",
+    efficiency: 10,
   },
   // {
   //     imageUrl: redux,
@@ -128,41 +144,67 @@ export const skills = [
     imageUrl: tailwindcss,
     name: "Tailwind CSS",
     type: "Frontend",
+    efficiency: 9,
   },
   {
     imageUrl: typescript,
     name: "TypeScript",
     type: "Frontend",
+    efficiency: 8,
   },
   {
     imageUrl: unity,
     name: "Unity",
     type: "GamingEngine",
+    efficiency: 5,
   },
   {
     imageUrl: cSharp,
     name: "C#",
     type: "Language",
+    efficiency: 5,
   },
   {
     imageUrl: c,
     name: "C",
     type: "Language",
+    efficiency: 7,
   },
   {
     imageUrl: cPlus,
     name: "C++",
     type: "Language",
+    efficiency: 9,
   },
   {
     imageUrl: java,
     name: "Java",
     type: "Language",
+    efficiency: 8,
   },
   {
     imageUrl: threejs,
     name: "Threejs",
     type: "Frontend",
+    efficiency: 10,
+  },
+  {
+    imageUrl: reactNative,
+    name: "React Native",
+    type: "Frontend",
+    efficiency: 8,
+  },
+  {
+    imageUrl: swift,
+    name: "Swift",
+    type: "Language",
+    efficiency: 6,
+  },
+  {
+    imageUrl: firebase,
+    name: "Firebase",
+    type: "Backend",
+    efficiency: 10,
   },
 ];
 
@@ -240,7 +282,47 @@ export const experiences = [
     icon: mit,
     iconBg: "#e3dcdc",
     date: "2021-2025",
+    points: ["Graduated in June 2025 with a CGPA of 7.7/10"],
+  },
+  {
+    title: "Software Intern",
+    company_name: "Cross Country Infotech",
+    icon: crosscountryLogo,
+    iconBg: "#b7e4c7",
+    date: "January 2025",
     points: [],
+  },
+  {
+    title: "Software Engineer Trainee",
+    company_name: "Cross Country Infotech",
+    icon: crosscountryLogo,
+    iconBg: "#a2d2ff",
+    date: "August 2025 - December 2025",
+    points: [],
+  },
+  {
+    title: "MSCS at Northeastern University",
+    company_name: "Boston",
+    icon: NEULogo,
+    iconBg: "#F8ABB9",
+    date: "January 2026 - May 2028",
+    points: [],
+  },
+  {
+    title: "Built & Deployed UrDrobe",
+    company_name: "Available on the App Store",
+    icon: urdrobe,
+    iconBg: "#accbe1",
+    date: "January 2026 - May 2026",
+    points: ["Built and deployed an AI-powered virtual wardrobe iOS app"],
+  },
+  {
+    title: "Built & Deployed Quirepad",
+    company_name: "Available on the Mac App Store",
+    icon: quirepad,
+    iconBg: "#6CC5D9",
+    date: "July 2026",
+    points: ["Built and deployed a Safari extension for macOS and iOS"],
   },
 ];
 
@@ -278,7 +360,10 @@ export const projects = [
     description:
       "Quirepad is a Safari extension for macOS and iOS that lets you select text across pages and tabs and merge it all into one clipboard paste, grouped by source, with everything stored locally and no accounts or tracking.",
     links: [
-      { name: "Mac App Store", url: "https://apps.apple.com/us/app/quirepad/id6792422405?mt=12" },
+      {
+        name: "Mac App Store",
+        url: "https://apps.apple.com/us/app/quirepad/id6792422405?mt=12",
+      },
       { name: "iOS App Store", url: "" },
     ],
   },

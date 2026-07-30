@@ -39,6 +39,9 @@ import vw from "./vw.png";
 import tshirt from "./tshirt.png";
 import urdrobe from "./urdrobe.png";
 import quirepad from "./quirepad.png";
+import reactNative from "./react-native.svg";
+import swift from "./swift.svg";
+import firebase from "./firebase.png";
 export {
   css,
   express,
@@ -81,4 +84,7 @@ export {
   tshirt,
   urdrobe,
   quirepad,
+  reactNative,
+  swift,
+  firebase,
 };

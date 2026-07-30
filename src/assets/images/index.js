@@ -13,6 +13,8 @@ import atom from './atom.png'
 import hashtag from './hashtag.png'
 import cpp from './cpp.png'
 import mit from './MIT.png'
+import crosscountryLogo from './crosscountryLogo.png'
+import NEULogo from './NEULogo.png'
 
 export {
     hero,
@@ -29,5 +31,7 @@ export {
     atom,
     hashtag,
     cpp,
-    mit
+    mit,
+    crosscountryLogo,
+    NEULogo,
 }

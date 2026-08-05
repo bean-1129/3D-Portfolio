@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { projects } from '../constants'
 import { Link } from 'react-router-dom'
 import { arrow } from '../assets/icons'
 import CTA from '../components/CTA'
 
 const Projects = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(null)
-
   return (
     <section className='max-container'>
       <h1 className='head-text'>My <span className='blue-gradient_text font-semibold drop-shadow'>Projects</span> 
@@ -36,49 +34,13 @@ const Projects = () => {
                   {project.description}
                 </p>
                 <div className='mt-5 flex items-center gap-2 font-poppins'>
-                  {project.links ? (
-                    <div className='relative'>
-                      <button
-                        onClick={() => setDropdownOpen(dropdownOpen === project.name ? null : project.name)}
-                        className='font-semibold text-blue-600 flex items-center gap-1'
-                      >
-                        Live Link
-                        <svg className={`w-3 h-3 transition-transform ${dropdownOpen === project.name ? 'rotate-180' : ''}`} fill='none' stroke='currentColor' viewBox='0 0 24 24'>
-                          <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M19 9l-7 7-7-7' />
-                        </svg>
-                      </button>
-                      {dropdownOpen === project.name && (
-                        <div className='absolute top-full left-0 mt-2 bg-white border border-slate-200 rounded-lg shadow-lg z-10 min-w-[220px]'>
-                          {project.links.map((link) => (
-                            link.url ? (
-                              <a
-                                key={link.name}
-                                href={link.url}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='block px-4 py-2.5 text-sm text-slate-700 hover:bg-slate-100 rounded-lg transition-colors'
-                              >
-                                {link.name}
-                              </a>
-                            ) : (
-                              <div
-                                key={link.name}
-                                className='block px-4 py-2.5 text-sm text-slate-400 cursor-default'
-                              >
-                                {link.name} – Submitted for review on App Store
-                              </div>
-                            )
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  ) : project.link ? (
+                  {project.link ? (
                     <>
                       <Link to={project.link}
                       target='_blank'
                       rel='noopener noreferrer'
                       className='font-semibold text-blue-600'>
-                        Live Link
+                        {project.linkLabel || "Live Link"}
                       </Link>
                       <img 
                         src={arrow}

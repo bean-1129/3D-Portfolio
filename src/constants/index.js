@@ -359,13 +359,8 @@ export const projects = [
     name: "Quirepad",
     description:
       "Quirepad is a Safari extension for macOS and iOS that lets you select text across pages and tabs and merge it all into one clipboard paste, grouped by source, with everything stored locally and no accounts or tracking.",
-    links: [
-      {
-        name: "Mac App Store",
-        url: "https://apps.apple.com/us/app/quirepad/id6792422405?mt=12",
-      },
-      { name: "iOS App Store", url: "" },
-    ],
+    link: "https://apps.apple.com/us/app/quirepad/id6792422405?mt=12",
+    linkLabel: "App Store",
   },
   {
     iconUrl: todo,
